@@ -32,7 +32,7 @@
   display: block;
 }
 .animated-title > div.text-top {
-  border-bottom: 1vmin solid #313131;
+  border-bottom: .9vmin solid #313131;
   top: 0;
 }
 .animated-title > div.text-top div {
