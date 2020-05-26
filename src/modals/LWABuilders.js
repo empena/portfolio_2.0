@@ -20,10 +20,10 @@ const LWABuilders = () => {
             </button>
             <div style={styles.modalHeader}>
               <h1 style={styles.h1}>Batters Up Menu Design</h1>
-              <a href="https://www.emilypena.me" style={styles.circle}>
+              <a href="https://github.com/empena/lwabuilders" style={styles.circle}>
                 <FontAwesomeIcon icon={faGithub} size="lg" />
               </a>
-              <a href="https://www.emilypena.me" style={styles.circle}>
+              <a href="https://www.lwabuilders.com" style={styles.circle}>
                 <FontAwesomeIcon icon={faEye} />
               </a>
             </div>
