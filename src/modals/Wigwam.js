@@ -79,7 +79,6 @@ const styles = {
     backgroundColor: "#232323",
     margin: "15% auto",
     padding: "2em",
-    paddingBottom: "10em",
     width: "60%",
   },
 
