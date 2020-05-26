@@ -9,10 +9,10 @@ const Home = () => {
       <div style={styles.header}>
         <h1>Coder & Designer</h1>
         <Link to="/design">
-          <button style={styles.space}>Design</button>
+          <button style={styles.space}>DESIGN</button>
         </Link>
         <Link to="/code">
-          <button style={styles.space}>Code</button>
+          <button style={styles.space}>CODE</button>
         </Link>
       </div>
     </>
