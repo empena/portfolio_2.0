@@ -1,105 +1,26 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styles/Portfolio.css";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye } from "@fortawesome/free-solid-svg-icons";
+import LWABuilders from "../modals/LWABuilders";
+import DigitalGloveBox from "../modals/DigitalGloveBox";
 
 const Code = () => {
-  const [showForm, setShowForm] = useState(false);
-
-  const Modal = () => {
-    return (
-      <>
-        <div style={styles.modal}>
-          <div style={styles.modalContent}>
-            <button
-              style={styles.modalExit}
-              onClick={() => setShowForm(!showForm)}
-            >
-              {showForm ? "x" : "View"}
-            </button>
-            <div style={styles.modalHeader}>
-              <h1 style={styles.h1}>Project Name</h1>
-              <p style={styles.p2}>Description</p>
-              <a href="https://www.emilypena.me" style={styles.circle}>
-                <FontAwesomeIcon icon={faGithub} size="lg" />
-              </a>
-              <a href="https://www.emilypena.me" style={styles.circle}>
-                <FontAwesomeIcon icon={faEye} />
-              </a>
-            </div>
-            <div style={styles.modalImg}>
-            <img
-              alt="Test"
-              src="https://res.cloudinary.com/dvwwzmsmn/image/upload/v1589342289/Portfolio/Screen_Shot_2020-05-12_at_9.57.57_PM_p6ntna.png"
-            />
-            <img
-              alt="Test"
-              src="https://res.cloudinary.com/dvwwzmsmn/image/upload/v1589342289/Portfolio/Screen_Shot_2020-05-12_at_9.57.57_PM_p6ntna.png"
-            />
-            <img
-              alt="Test"
-              src="https://res.cloudinary.com/dvwwzmsmn/image/upload/v1589342289/Portfolio/Screen_Shot_2020-05-12_at_9.57.57_PM_p6ntna.png"
-            />
-            </div>
-          </div>
-        </div>
-      </>
-    );
-  };
-
   return (
     <>
       <Navbar />
       <div className="scrolling-box">
         <div style={styles.headerContainer}>
-          <h1>Design Portfolio</h1>
+          <h1>Code Portfolio</h1>
         </div>
         <section id="code">
           <div className="portfolioContainer">
             <div className="row">
-              <div className="column">
-                {showForm && <Modal toggleForm={setShowForm} />}
-                <img
-                  onClick={() => setShowForm(!showForm)}
-                  alt="Test"
-                  src="https://res.cloudinary.com/dvwwzmsmn/image/upload/v1589342289/Portfolio/Screen_Shot_2020-05-12_at_9.57.57_PM_p6ntna.png"
-                />
-              </div>
-              <div className="column">
-                <img
-                  onClick={() => setShowForm(!showForm)}
-                  alt="Test"
-                  src="https://res.cloudinary.com/dvwwzmsmn/image/upload/v1589342289/Portfolio/Screen_Shot_2020-05-12_at_9.57.57_PM_p6ntna.png"
-                />
-              </div>
-              <div className="column">
-                <img
-                  onClick={() => setShowForm(!showForm)}
-                  alt="Test"
-                  src="https://res.cloudinary.com/dvwwzmsmn/image/upload/v1589342289/Portfolio/Screen_Shot_2020-05-12_at_9.57.57_PM_p6ntna.png"
-                />
-              </div>
-              <div className="column">
-                <img
-                  onClick={() => setShowForm(!showForm)}
-                  alt="Test"
-                  src="https://res.cloudinary.com/dvwwzmsmn/image/upload/v1589342289/Portfolio/Screen_Shot_2020-05-12_at_9.57.57_PM_p6ntna.png"
-                />
-              </div>
-              <div className="column">
-                <img
-                  onClick={() => setShowForm(!showForm)}
-                  alt="Test"
-                  src="https://res.cloudinary.com/dvwwzmsmn/image/upload/v1589342289/Portfolio/Screen_Shot_2020-05-12_at_9.57.57_PM_p6ntna.png"
-                />
-              </div>
+              <LWABuilders />
+              <DigitalGloveBox />
             </div>
           </div>
-          {/* </div> */}
         </section>
         <Contact />
         <Footer />
@@ -120,64 +41,5 @@ const styles = {
     padding: "50px",
     paddingTop: "100px",
     marginTop: "1.5em",
-  },
-
-  modal: {
-    position: "fixed",
-    zIndex: "1",
-    left: "0",
-    top: "0",
-    width: "100%",
-    height: "100%",
-    overflow: "auto",
-    backgroundColor: "rgba(0,0,0,0.8)",
-  },
-
-  modalContent: {
-    backgroundColor: "#232323",
-    margin: "15% auto",
-    padding: "2em",
-    paddingBottom: "10em",
-    width: "60%",
-  },
-
-  modalHeader: {
-    paddingBottom: "4em",
-    textAlign: "center",
-    color: "#00FFD1",
-  },
-
-  modalImg: {
-    width: 'auto',
-    border: 'none',
-  },
-
-  modalExit: {
-    border: "1px solid #ADADAD",
-    borderRadius: "50%",
-    width: "30px",
-    padding: ".75em",
-    color: "#ADADAD",
-    cursor: "pointer",
-    fontSize: "10px",
-  },
-
-  h1: {
-    color: "#00FFD1",
-  },
-
-  p2: {
-    color: "#ADADAD",
-    lineHeight: "23px",
-  },
-
-  circle: {
-    marginRight: "1em",
-    border: "1px solid #00FFD1",
-    borderRadius: "50%",
-    width: "20px",
-    padding: ".75em",
-    textAlign: "center",
-    color: "#00FFD1",
   },
 };
