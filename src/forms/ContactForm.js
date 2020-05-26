@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Form.css";
+import "../styles/Alert.css";
 
 const ContactForm = () => {
   const [email, setEmail] = useState("");
@@ -20,10 +21,9 @@ const ContactForm = () => {
   const isEnabled = name.length > 0 && email.length > 0 && message.length > 1;
 
   return (
-    
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} >
       <input
-        type='text'
+        type="text"
         label="Name"
         required
         name="name"
@@ -33,7 +33,7 @@ const ContactForm = () => {
       />
       <br />
       <input
-      type='text'
+        type="text"
         label="Email"
         required
         name="email"
@@ -43,7 +43,7 @@ const ContactForm = () => {
       />
       <br />
       <textarea
-      type='textarea'
+        type="textarea"
         label="Message"
         required
         name="message"
@@ -52,8 +52,13 @@ const ContactForm = () => {
         onChange={(e) => setMessage(e.target.value)}
       />
       <br />
-      {isSent && <p style={styles.p2}>Your message was sent. Thank you.</p>}
-      <button disabled={!isEnabled} className="button" onClick={() => setIsSent(!isSent)} type="submit">
+      {isSent && <div class="alert">Message Sent</div>}
+      <button
+        disabled={!isEnabled}
+        className="button"
+        onClick={() => setIsSent(!isSent)}
+        type="submit"
+      >
         SEND
       </button>
     </form>
@@ -61,9 +66,3 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
-
-const styles = {
-  p2: {
-    color: "#ADADAD",
-  },
-}
