@@ -1,12 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Navbar2 from "./Navbar2";
+import "../styles/Home.css";
 
 const Home = () => {
   return (
     <>
       <Navbar2 />
       <div style={styles.header}>
+      <div class="animated-title">
+        <div class="text-top">
+          <div>
+            <span>CODER</span>
+            <span>& DESIGNER</span>
+          </div>
+        </div>
+        <div class="text-bottom">
+          <div>
+            <Link to="/design">
+              <button style={styles.space}>DESIGN</button>
+            </Link>
+            <Link to="/code">
+              <button style={styles.space}>CODE</button>
+            </Link>
+          </div>
+        </div>
+      </div>
+      </div>
+      {/* <div style={styles.header}>
         <h1>Coder & Designer</h1>
         <Link to="/design">
           <button style={styles.space}>DESIGN</button>
@@ -14,7 +35,7 @@ const Home = () => {
         <Link to="/code">
           <button style={styles.space}>CODE</button>
         </Link>
-      </div>
+      </div> */}
     </>
   );
 };
@@ -29,11 +50,11 @@ const styles = {
     height: "100%",
     color: "#00FFD1",
     fontSize: "30px",
-    textAlign: "center",
+    // textAlign: "center",
     marginTop: "1.5em",
-    paddingTop: "200px",
+    // paddingTop: "50px",
   },
   space: {
-    margin: "20px",
+    marginRight: "20px",
   },
 };
