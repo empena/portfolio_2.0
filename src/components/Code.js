@@ -15,21 +15,36 @@ const Code = () => {
       <>
         <div style={styles.modal}>
           <div style={styles.modalContent}>
-            <h1>Project Name</h1>
-            <p>Description</p>
-            <a href="https://www.emilypena.me" style={styles.circle}>
-              <FontAwesomeIcon icon={faGithub} size="lg" />
-            </a>
-            <a href="https://www.emilypena.me" style={styles.circle}>
-              <FontAwesomeIcon icon={faEye} />
-            </a>
-            <button onClick={() => setShowForm(!showForm)}>
+            <button
+              style={styles.modalExit}
+              onClick={() => setShowForm(!showForm)}
+            >
               {showForm ? "x" : "View"}
             </button>
+            <div style={styles.modalHeader}>
+              <h1 style={styles.h1}>Project Name</h1>
+              <p style={styles.p2}>Description</p>
+              <a href="https://www.emilypena.me" style={styles.circle}>
+                <FontAwesomeIcon icon={faGithub} size="lg" />
+              </a>
+              <a href="https://www.emilypena.me" style={styles.circle}>
+                <FontAwesomeIcon icon={faEye} />
+              </a>
+            </div>
+            <div style={styles.modalImg}>
             <img
               alt="Test"
               src="https://res.cloudinary.com/dvwwzmsmn/image/upload/v1589342289/Portfolio/Screen_Shot_2020-05-12_at_9.57.57_PM_p6ntna.png"
             />
+            <img
+              alt="Test"
+              src="https://res.cloudinary.com/dvwwzmsmn/image/upload/v1589342289/Portfolio/Screen_Shot_2020-05-12_at_9.57.57_PM_p6ntna.png"
+            />
+            <img
+              alt="Test"
+              src="https://res.cloudinary.com/dvwwzmsmn/image/upload/v1589342289/Portfolio/Screen_Shot_2020-05-12_at_9.57.57_PM_p6ntna.png"
+            />
+            </div>
           </div>
         </div>
       </>
@@ -41,7 +56,7 @@ const Code = () => {
       <Navbar />
       <div className="scrolling-box">
         <div style={styles.headerContainer}>
-          <h1>Code Portfolio</h1>
+          <h1>Design Portfolio</h1>
         </div>
         <section id="code">
           <div className="portfolioContainer">
@@ -54,8 +69,37 @@ const Code = () => {
                   src="https://res.cloudinary.com/dvwwzmsmn/image/upload/v1589342289/Portfolio/Screen_Shot_2020-05-12_at_9.57.57_PM_p6ntna.png"
                 />
               </div>
+              <div className="column">
+                <img
+                  onClick={() => setShowForm(!showForm)}
+                  alt="Test"
+                  src="https://res.cloudinary.com/dvwwzmsmn/image/upload/v1589342289/Portfolio/Screen_Shot_2020-05-12_at_9.57.57_PM_p6ntna.png"
+                />
+              </div>
+              <div className="column">
+                <img
+                  onClick={() => setShowForm(!showForm)}
+                  alt="Test"
+                  src="https://res.cloudinary.com/dvwwzmsmn/image/upload/v1589342289/Portfolio/Screen_Shot_2020-05-12_at_9.57.57_PM_p6ntna.png"
+                />
+              </div>
+              <div className="column">
+                <img
+                  onClick={() => setShowForm(!showForm)}
+                  alt="Test"
+                  src="https://res.cloudinary.com/dvwwzmsmn/image/upload/v1589342289/Portfolio/Screen_Shot_2020-05-12_at_9.57.57_PM_p6ntna.png"
+                />
+              </div>
+              <div className="column">
+                <img
+                  onClick={() => setShowForm(!showForm)}
+                  alt="Test"
+                  src="https://res.cloudinary.com/dvwwzmsmn/image/upload/v1589342289/Portfolio/Screen_Shot_2020-05-12_at_9.57.57_PM_p6ntna.png"
+                />
+              </div>
             </div>
           </div>
+          {/* </div> */}
         </section>
         <Contact />
         <Footer />
@@ -73,7 +117,8 @@ const styles = {
     height: "auto",
     color: "#00FFD1",
     textAlign: "center",
-    padding: "100px",
+    padding: "50px",
+    paddingTop: "100px",
     marginTop: "1.5em",
   },
 
@@ -89,12 +134,32 @@ const styles = {
   },
 
   modalContent: {
-    textAlign: "center",
-    backgroundColor: "white",
+    backgroundColor: "#232323",
     margin: "15% auto",
-    padding: "20px",
-    border: "1px solid #888",
-    width: "80%",
+    padding: "2em",
+    paddingBottom: "10em",
+    width: "60%",
+  },
+
+  modalHeader: {
+    paddingBottom: "4em",
+    textAlign: "center",
+    color: "#00FFD1",
+  },
+
+  modalImg: {
+    width: 'auto',
+    border: 'none',
+  },
+
+  modalExit: {
+    border: "1px solid #ADADAD",
+    borderRadius: "50%",
+    width: "30px",
+    padding: ".75em",
+    color: "#ADADAD",
+    cursor: "pointer",
+    fontSize: "10px",
   },
 
   h1: {
