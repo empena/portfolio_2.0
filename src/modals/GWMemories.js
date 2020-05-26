@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye } from "@fortawesome/free-solid-svg-icons";
 import "../styles/Portfolio.css";
 
 const GWMemories = () => {
@@ -19,22 +16,7 @@ const GWMemories = () => {
               {showForm ? "x" : "View"}
             </button>
             <div style={styles.modalHeader}>
-              <h1 style={styles.h1}>Grand Wailea</h1>
-              <p style={styles.p2}>Legacy Creative Concept</p>
-              <p style={styles.p2}>
-                Creative Director: Jeff Olsen | Art Director: Emily Peña |
-                Copywriter: Haley Larsen
-              </p>
-              <p style={styles.p2}>
-                Photo comps: Terry Vine Photography, Jason Lindsay Photography,
-                Jim Ericson Photography, Colette De Barros Photograph
-              </p>
-              <a href="https://www.emilypena.me" style={styles.circle}>
-                <FontAwesomeIcon icon={faGithub} size="lg" />
-              </a>
-              <a href="https://www.emilypena.me" style={styles.circle}>
-                <FontAwesomeIcon icon={faEye} />
-              </a>
+              <h1 style={styles.h1}>Grand Wailea Legacy Creative Concept</h1>
             </div>
             <div style={styles.modalImg}>
               <img
@@ -49,6 +31,12 @@ const GWMemories = () => {
                 alt="Test"
                 src="https://res.cloudinary.com/dvwwzmsmn/image/upload/v1589340561/Portfolio/GWMemories3_h4b5vz.png"
               />
+              <p style={styles.p2}>
+                Creative Director: Jeff Olsen | Art Director: Emily Peña |
+                Copywriter: Haley Larsen | Photo comps: Terry Vine Photography,
+                Jason Lindsay Photography, Jim Ericson Photography, Colette De
+                Barros Photograph
+              </p>
             </div>
           </div>
         </div>
@@ -128,7 +116,8 @@ const styles = {
 
   p2: {
     color: "#ADADAD",
-    lineHeight: "23px",
+    lineHeight: "18px",
+    fontSize: "14px",
   },
 
   circle: {

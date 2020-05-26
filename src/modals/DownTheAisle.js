@@ -1,7 +1,4 @@
 import React, {useState} from 'react';
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye } from "@fortawesome/free-solid-svg-icons";
 import "../styles/Portfolio.css";
 
 const DownTheAisle = () => {
@@ -20,14 +17,7 @@ const DownTheAisle = () => {
                 {showForm ? "x" : "View"}
               </button>
               <div style={styles.modalHeader}>
-                <h1 style={styles.h1}>Down The Aisle</h1>
-                <p style={styles.p2}>Package Design by Emily Pena</p>
-                <a href="https://www.emilypena.me" style={styles.circle}>
-                  <FontAwesomeIcon icon={faGithub} size="lg" />
-                </a>
-                <a href="https://www.emilypena.me" style={styles.circle}>
-                  <FontAwesomeIcon icon={faEye} />
-                </a>
+                <h1 style={styles.h1}>Down The Aisle Package Design</h1>
               </div>
               <div style={styles.modalImg}>
               <img

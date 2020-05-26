@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye } from "@fortawesome/free-solid-svg-icons";
 import "../styles/Portfolio.css";
 
 const Wigwam = () => {
@@ -20,12 +17,6 @@ const Wigwam = () => {
             </button>
             <div style={styles.modalHeader}>
               <h1 style={styles.h1}>Wigwam Packaging Concept</h1>
-              <a href="https://www.emilypena.me" style={styles.circle}>
-                <FontAwesomeIcon icon={faGithub} size="lg" />
-              </a>
-              <a href="https://www.emilypena.me" style={styles.circle}>
-                <FontAwesomeIcon icon={faEye} />
-              </a>
             </div>
             <div style={styles.modalImg}>
               <img
