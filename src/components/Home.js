@@ -18,24 +18,15 @@ const Home = () => {
         <div class="text-bottom">
           <div>
             <Link to="/design">
-              <button style={styles.space}>DESIGN</button>
+              <button className="button" style={styles.space}>DESIGN</button>
             </Link>
             <Link to="/code">
-              <button style={styles.space}>CODE</button>
+              <button className="button"  style={styles.space}>CODE</button>
             </Link>
           </div>
         </div>
       </div>
       </div>
-      {/* <div style={styles.header}>
-        <h1>Coder & Designer</h1>
-        <Link to="/design">
-          <button style={styles.space}>DESIGN</button>
-        </Link>
-        <Link to="/code">
-          <button style={styles.space}>CODE</button>
-        </Link>
-      </div> */}
     </>
   );
 };
@@ -50,9 +41,7 @@ const styles = {
     height: "100%",
     color: "#00FFD1",
     fontSize: "30px",
-    // textAlign: "center",
     marginTop: "1.5em",
-    // paddingTop: "50px",
   },
   space: {
     marginRight: "20px",
