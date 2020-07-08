@@ -19,7 +19,7 @@ const LWABuilders = () => {
               {showForm ? "x" : "View"}
             </button>
             <div style={styles.modalHeader}>
-              <h1 style={styles.h1}>Batters Up Menu Design</h1>
+              <h1 style={styles.h1}>LWA Builders</h1>
               <a href="https://github.com/empena/lwabuilders" style={styles.circle}>
                 <FontAwesomeIcon icon={faGithub} size="lg" />
               </a>
@@ -29,12 +29,8 @@ const LWABuilders = () => {
             </div>
             <div style={styles.modalImg}>
               <img
-                alt="Test"
-                src="https://res.cloudinary.com/dvwwzmsmn/image/upload/v1589308642/Portfolio/BattersUp1_cmrx5k.jpg"
-              />
-              <img
-                alt="Test"
-                src="https://res.cloudinary.com/dvwwzmsmn/image/upload/v1589308642/Portfolio/BattersUp2_tlthiu.jpg"
+                alt="lwa_website_portfolio_image"
+                src="https://res.cloudinary.com/dvwwzmsmn/image/upload/v1594190726/Portfolio/lwa_main_pcqwtz.jpg"
               />
             </div>
           </div>
@@ -48,8 +44,8 @@ const LWABuilders = () => {
       {showForm && <Modal toggleForm={setShowForm} />}
       <img
         onClick={() => setShowForm(!showForm)}
-        alt="Test"
-        src="https://res.cloudinary.com/dvwwzmsmn/image/upload/v1589308642/Portfolio/BattersUp2_tlthiu.jpg"
+        alt="lwa_website_portfolio_thumb"
+        src="https://res.cloudinary.com/dvwwzmsmn/image/upload/v1594190726/Portfolio/lwa_thumb_h2r94x.jpg"
       />
     </div>
   );
