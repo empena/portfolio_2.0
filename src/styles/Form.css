@@ -11,12 +11,14 @@ input[type=text] {
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.1);
   font-size: 15px;
+  color: #ADADAD;
 }
 
 input[type=text]:focus {
   border: 3px solid #00FFD1;
   outline: none;
-  background: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ADADAD;
 }
 
 textarea {
@@ -31,11 +33,16 @@ textarea {
   font-size: 15px;
   margin-top: 15px;
   margin-bottom: 15px;
+  font-family: 'Rubik', sans-serif, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  color: #ADADAD;
 }
 
 textarea:focus {
   border: 3px solid #00FFD1;
   outline: none;
+  color: #ADADAD;
 }
 
 button {
