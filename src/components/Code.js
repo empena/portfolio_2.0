@@ -34,12 +34,13 @@ export default Code;
 const styles = {
   headerContainer: {
     backgroundColor: "#232323",
+    fontSize: "20px",
     width: "auto",
     height: "auto",
     color: "#00FFD1",
     textAlign: "center",
     padding: "50px",
-    paddingTop: "100px",
+    paddingTop: "70px",
     marginTop: "1.5em",
   },
 };
