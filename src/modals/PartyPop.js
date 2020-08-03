@@ -13,7 +13,7 @@ const PartyPop = () => {
               style={styles.modalExit}
               onClick={() => setShowForm(!showForm)}
             >
-              {showForm ? "x" : "View"}
+              {showForm ? "X" : "View"}
             </button>
             <div style={styles.modalHeader}>
               <h1 style={styles.h1}>Party Pop Package Design</h1>

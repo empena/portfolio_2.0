@@ -14,12 +14,12 @@ const DownTheAisle = () => {
                 style={styles.modalExit}
                 onClick={() => setShowForm(!showForm)}
               >
-                {showForm ? "x" : "View"}
+                {showForm ? "X" : "View"}
               </button>
               <div style={styles.modalHeader}>
                 <h1 style={styles.h1}>Down The Aisle Package Design</h1>
               </div>
-              <div style={styles.modalImg}>
+              <div className={styles.modalImg}>
               <img
                 alt="Test"
                 src="https://res.cloudinary.com/dvwwzmsmn/image/upload/v1589340817/Portfolio/DownTheAisle_1_hanugk.jpg"
@@ -88,6 +88,7 @@ const DownTheAisle = () => {
       modalImg: {
         width: 'auto',
         border: 'none',
+        opacity: '1',
       },
     
       modalExit: {
