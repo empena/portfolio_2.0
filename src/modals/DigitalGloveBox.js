@@ -30,7 +30,7 @@ const DigitalGloveBox = () => {
             <div style={styles.modalImg}>
               <img
                 alt="Test"
-                src="https://res.cloudinary.com/dvwwzmsmn/image/upload/v1594190726/Portfolio/lwa_main_pcqwtz.jpg"
+                src="https://res.cloudinary.com/dvwwzmsmn/image/upload/v1596426320/Portfolio/dgb_main_x8cakn.jpg"
               />
             </div>
           </div>
@@ -45,7 +45,7 @@ const DigitalGloveBox = () => {
       <img
         onClick={() => setShowForm(!showForm)}
         alt="Test"
-        src="https://res.cloudinary.com/dvwwzmsmn/image/upload/v1594190726/Portfolio/lwa_thumb_h2r94x.jpg"
+        src="https://res.cloudinary.com/dvwwzmsmn/image/upload/v1596426320/Portfolio/dgb_thumb_ajpcpx.jpg"
       />
     </div>
   );
