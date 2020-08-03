@@ -23,7 +23,7 @@ const DigitalGloveBox = () => {
               <a href="https://github.com/devpointlabs/DigitalGloveBox" style={styles.circle}>
                 <FontAwesomeIcon icon={faGithub} size="lg" />
               </a>
-              <a href="https://www.digitalglove-box.com" style={styles.circle}>
+              <a href="https://digital-glovebox.herokuapp.com/" style={styles.circle}>
                 <FontAwesomeIcon icon={faEye} />
               </a>
             </div>
